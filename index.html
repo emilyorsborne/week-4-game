@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Crystal Collector Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<script src="assets/javascript/jquery.js"></script>
+</head>
+<body>
+
+<!-- Bootstrap Container will hold everything. -->
+	<div class='container'>
+
+<!--Game Title -->
+	<div class='panel1'>
+        <h1 id="gameTitle"><strong>Crystal Collector!</strong></h1>
+	</div>
+
+<!-- Container holds the title section. -->
+     <div class='cotainer'>
+        <div class='col-md-6'>
+        	<h4><strong>Game Rules:</strong></h4>
+        	<ul>
+				<li>You will be given a random number at the start of the game</li>
+				<li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+				<li>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</li>
+				<li>The value of each crystal is hidden from you until you click on it.</li>
+				<li>Each time the game starts, the game will change the values of each crystal</li>
+			</ul>
+        </div>
+      </div>
+
+<!-- Container holds random number and wins/losses -->
+	<div class="container">
+		<div class='row'>
+			<div class='col-md-3' id="randomNumber">
+			<span><strong>0</strong></span>
+			</div>
+			<div class='col-md-2' id="winLoose">
+				<div class='row' id="winsRow">
+					<strong>Wins: </strong> <span id="numWins">0</span>
+				</div>
+				<div class='row' id="lossesRow">
+					<strong>Losses: </strong> <span id="numLosses">0</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- Gems Container -->
+	<div class="container" id="gems">
+		<div class="col-md-6">
+			<button id="blueGem" type=img><img src="assets/images/blueGem.jpg"></button>
+			<img src="assets/images/yellowGem.jpg" id="yellowGem">
+			<img src="assets/images/purpleGem.jpg" id="purpleGem">
+			<img src="assets/images/pinkGem.jpg" id="pinkGem">
+		</div>
+	</div>
+
+
+
+<!-- Total Score Container -->
+	<div class="panel col-md-3" id="yourScoreLabel">
+		<strong>Your total score is:</strong>
+	</div>
+	<div class="panel col-md-3" id="yourScore">
+		<strong>0</strong>
+	</div>
+
+
+</div>
+
+
+<!-- link javascript file -->
+	<script src='assets/javascript/game.js'></script>
+
+</body>
+</html>

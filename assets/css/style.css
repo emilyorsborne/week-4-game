@@ -1,0 +1,43 @@
+#gameTitle {
+	text-align: center;
+	background-color: #8fbc8f;
+	padding: 10px;
+	color: white;
+   -webkit-text-fill-color: white; 
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+}
+
+#randomNumber {
+	background-color: #add8e6;
+	font-size: 30px;
+	margin-right: 20px;
+}
+
+#winLoose {
+	background-color: #f0e68c;
+}
+
+#winsRow, #lossesRow {
+	padding: 10px;
+}
+
+img {
+	width: 65px;
+	height: 65px;
+}
+
+#gems {
+	margin: 20px;
+}
+
+#yourScoreLabel {
+	background-color: #d8bfd8;
+	margin-bottom: 10px;
+}
+
+#yourScore {
+	background-color: #d8bfd8;
+	height: 70px;
+	font-size: 30px;
+}
